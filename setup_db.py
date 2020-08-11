@@ -1,8 +1,8 @@
 from app import app, db
 from app.models import Task
 
-db.drop_all()
-db.create_all()
+db.drop_all() #drops all the tables
+db.create_all() #looks at internal structure of database and creates it for us
 
 tasks = [
     'Eat some food',
